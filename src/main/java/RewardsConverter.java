@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import main.java.RewardValue; // replace with the actual package name of RewardValue
 
 public class RewardsConverter {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class RewardsConverter {
             return;
         }
         System.out.println("converting $" + input_value + " to miles");
-        var rewardsValue = new RewardValue(cashValue);
+        RewardValue rewardsvalue = new RewardValue(100);
         System.out.println("$" + input_value + " is worth " + rewardsValue.getMilesValue() + " miles");
     }
 }
